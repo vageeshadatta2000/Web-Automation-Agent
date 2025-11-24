@@ -1,4 +1,4 @@
-# Vision Agent UI Automation Dataset
+# Demo Tasks Dataset
 
 ## Overview
 
@@ -31,6 +31,7 @@ Each task folder contains:
 **App:** Linear (Project Management)
 **Objective:** Create a new project named "Softlight Plan"
 **Steps:** 5
+
 **Workflow:**
 1. Navigate to Projects section
 2. Click "Add project" button
@@ -46,6 +47,7 @@ Each task folder contains:
 **App:** Linear (Project Management)
 **Objective:** Filter issues to show only medium priority items
 **Steps:** 4
+
 **Workflow:**
 1. Click Filter button to open filter panel
 2. Select "Priority" from filter options
@@ -60,6 +62,7 @@ Each task folder contains:
 **App:** Notion (Note-taking/Wiki)
 **Objective:** Create a new page titled "My Firstpage"
 **Steps:** 3
+
 **Workflow:**
 1. Click "New page" button
 2. Type page title in auto-focused field
@@ -73,6 +76,7 @@ Each task folder contains:
 **App:** Asana (Project Management)
 **Objective:** Create a new blank project named "Softlight"
 **Steps:** 7
+
 **Workflow:**
 1. Click "New project or portfolio" button
 2. Select "New project" from dropdown
