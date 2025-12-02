@@ -1,4 +1,4 @@
-# UI State Capture Agent
+# Web Automation Agent
 
 An AI-powered agent that navigates web applications to perform tasks and captures the UI state (screenshots and metadata) at each step.
 
