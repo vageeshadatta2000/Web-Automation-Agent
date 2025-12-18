@@ -1,0 +1,177 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply border-comet-border;
+  }
+
+  body {
+    @apply bg-comet-bg text-comet-text antialiased;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    @apply w-2;
+  }
+
+  ::-webkit-scrollbar-track {
+    @apply bg-comet-bg;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-comet-border-light rounded-full;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-comet-text-muted;
+  }
+}
+
+@layer components {
+  /* Light theme glass effect */
+  .glass {
+    @apply bg-white/90 backdrop-blur-xl border border-comet-border shadow-sm;
+  }
+
+  .glass-hover {
+    @apply hover:bg-comet-bg-hover transition-all duration-200;
+  }
+
+  /* Gradient text */
+  .gradient-text {
+    @apply bg-gradient-to-r from-comet-primary via-comet-accent to-comet-primary-light bg-clip-text text-transparent;
+  }
+
+  /* Subtle shadow */
+  .glow {
+    @apply shadow-md;
+  }
+
+  /* Light animated background - removed dark gradient */
+
+  /* Shimmer loading effect */
+  .shimmer {
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.05) 50%,
+      rgba(255, 255, 255, 0) 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 2s infinite;
+  }
+
+  /* Comet-style working indicator - fluid animation */
+  .working-indicator {
+    @apply flex items-center gap-2 px-4 py-2 bg-comet-primary/10 rounded-lg;
+    animation: pulse 2s ease-in-out infinite;
+  }
+
+  .working-dot {
+    @apply w-1.5 h-1.5 bg-comet-primary rounded-full;
+    animation: bounce 1.4s ease-in-out infinite;
+  }
+
+  .working-dot:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+
+  .working-dot:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+
+  @keyframes bounce {
+    0%, 80%, 100% {
+      transform: scale(0);
+      opacity: 0.5;
+    }
+    40% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+  @keyframes shimmer {
+    0% {
+      background-position: -200% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
+  }
+
+  /* Hide scrollbar utility */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Fluid blue glow animation for automation */
+  .automation-glow {
+    position: relative;
+  }
+
+  .automation-glow::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.3),
+                inset 0 0 20px rgba(59, 130, 246, 0.1);
+    animation: glow-pulse 2s ease-in-out infinite;
+  }
+
+  @keyframes glow-pulse {
+    0%, 100% {
+      opacity: 0.5;
+    }
+    50% {
+      opacity: 0.8;
+    }
+  }
+
+  /* Fluid wave animation */
+  .fluid-wave {
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(59, 130, 246, 0.2) 25%,
+      rgba(96, 165, 250, 0.3) 50%,
+      rgba(59, 130, 246, 0.2) 75%,
+      transparent 100%
+    );
+    background-size: 200% 100%;
+    animation: fluid-flow 2s linear infinite;
+  }
+
+  @keyframes fluid-flow {
+    0% {
+      background-position: 100% 0;
+    }
+    100% {
+      background-position: -100% 0;
+    }
+  }
+
+  /* Spinning border animation */
+  .spin-border {
+    animation: spin 1.5s linear infinite;
+  }
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}

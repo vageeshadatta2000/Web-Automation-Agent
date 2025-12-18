@@ -1,0 +1,52 @@
+/* Additional custom styles */
+
+.prose-invert {
+  color: var(--comet-text);
+}
+
+.prose-invert strong {
+  color: var(--comet-text);
+  font-weight: 600;
+}
+
+.prose-invert em {
+  color: var(--comet-text-secondary);
+}
+
+.prose-invert h1,
+.prose-invert h2,
+.prose-invert h3 {
+  color: var(--comet-text);
+  font-weight: 600;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+.prose-invert h1 {
+  font-size: 1.5em;
+}
+
+.prose-invert h2 {
+  font-size: 1.25em;
+}
+
+.prose-invert h3 {
+  font-size: 1.1em;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection color */
+::selection {
+  background-color: rgba(99, 102, 241, 0.3);
+  color: var(--comet-text);
+}
+
+/* Focus visible */
+*:focus-visible {
+  outline: 2px solid var(--comet-primary);
+  outline-offset: 2px;
+}

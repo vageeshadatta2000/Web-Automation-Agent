@@ -3,3 +3,10 @@ openai
 pydantic
 python-dotenv
 pillow
+httpx
+beautifulsoup4
+lxml
+fastapi
+uvicorn[standard]
+websockets
+python-multipart
