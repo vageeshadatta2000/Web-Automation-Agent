@@ -12,9 +12,9 @@ An intelligent AI agent for web automation. Chat naturally with web pages, searc
 
 ## Quick Start
 
-### Beautiful Web UI (Recommended!)
+### Web UI (Recommended!)
 
-**The Comet-style frontend with stunning animations:**
+
 
 ```bash
 # Terminal 1 - Start backend
